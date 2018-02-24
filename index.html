@@ -34,6 +34,13 @@
     width: 100%;
   }
 
+  #movieHeader2{
+    display: none;
+    margin: 0 auto 0 -3.1%;
+    padding: 0;
+    width: 106%;
+  }
+
   #customImage {
   	height: 20vw;
     width: 25vw;
@@ -68,9 +75,14 @@
   	text-align: center;
   }
 
+  .howitworksImages{
+    /*max-height: 500px;*/
+
+  }
+
 
   @media (max-width: 1000px) {
-    #customHeader, #movieHeader{
+    #customHeader, #movieHeader, #movieHeader2{
       display: none;
     }
   }
@@ -116,6 +128,19 @@
 
 </style>
 
+<script type="text/javascript">
+  setTimeout(function(){ 
+    console.log('switch headers');
+    document.getElementById('movieHeader').style.display = "none";
+    document.getElementById('movieHeader2').style.display = "block";
+    var x = document.getElementById("movieHeader2");
+    x.autoplay = true;
+    x.load();
+  }, 15000);
+
+
+</script>
+
 </head>
 
 <body id="page-top">
@@ -154,54 +179,61 @@
 
 
   <video autoplay loop id="movieHeader">
-    <source src="img/Explosion.mp4" type="video/mp4">
+    <source  src="img/Explosion.mp4" type="video/mp4">
     Your browser does not support the video tag.</video>
 
-    <div class="text-white text-center customFont" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160Share
-    </div>
-    <img id="customImage" src="img/MyShareLargeWhite.png">
+
+    <video loop id="movieHeader2">
+      <source src="img/Technology.mp4" type="video/mp4">
+      Your browser does not support the video tag.</video>
 
 
-    <section>
-      <div class="container">
-        <div class="row" id="about">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1  class="section-heading">MyShare (MYS) is a reward token users earn by sharing sponsored content on social media platforms.</h1>
-            <hr class="light my-4">
-            <!-- <p class=" mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
-            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+
+      <div class="text-white text-center customFont" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160Share
+      </div>
+      <img id="customImage" src="img/MyShareLargeWhite.png">
+
+
+      <section>
+        <div class="container">
+          <div class="row" id="about">
+            <div class="col-lg-8 mx-auto text-center">
+              <h1  class="section-heading">MyShare (MYS) is a reward token users earn by sharing sponsored content on social media platforms.</h1>
+              <hr class="light my-4">
+              <!-- <p class=" mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
+              <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-0" id="howitworks">
+        <div class="container p-0">
+         <p id='sectionTitle'>HOW IT WORKS</p>
+         <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.png" alt="">
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.png" alt="">
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.png" alt="">
           </div>
         </div>
       </div>
     </section>
-    <section class="p-0" id="howitworks">
+
+    <section class="p-0">
       <div class="container p-0">
-       <p id='sectionTitle'>HOW IT WORKS</p>
-       <div class="row no-gutters popup-gallery">
-        <div class="col-lg-4 col-sm-6">
-          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.png" alt="">
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.png" alt="">
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.png" alt="">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-6 offset-lg-3 col-sm-12">
+            <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/roadmap.white_.png" alt="">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="p-0">
-    <div class="container p-0">
-      <div class="row no-gutters popup-gallery">
-        <div class="col-lg-6 offset-lg-3 col-sm-12">
-          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/roadmap.white_.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Image Showcases -->
+    <!-- Image Showcases -->
     <!-- <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
