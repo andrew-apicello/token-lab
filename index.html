@@ -23,8 +23,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/creative.min.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Abel|Asap|Cabin|Josefin+Sans|Nunito+Sans|Play|Questrial" rel="stylesheet">
   <style type="text/css">
+
 
   #movieHeader {
     margin: 0 auto;
@@ -36,8 +37,8 @@
   #customImage {
   	height: 20vw;
     width: 25vw;
-  	padding: 0 ;
-  	position: absolute;
+    padding: 0 ;
+    position: absolute;
     display: block;
     margin: 0 37.8vw 0 37.2vw;
     /*width: 100%;*/
@@ -102,6 +103,17 @@
   }
 }
 
+.customFont{
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  /*font-family: 'Cabin', sans-serif;*/
+  /*font-family: 'Abel', sans-serif;*/
+  /*font-family: 'Asap', sans-serif;*/
+  /*font-family: 'Nunito Sans', sans-serif;*/
+  /*font-family: 'Questrial', sans-serif;*/
+  font-family: 'Play', sans-serif;
+
+}
+
 </style>
 
 </head>
@@ -117,9 +129,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+         <!--  <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#howitworks">How It Works</a>
           </li>
@@ -129,18 +141,23 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
+          <li class="nav-item">
+            <a style="color:rgb(66, 197, 244);" target="_blank" class="nav-link js-scroll-trigger" href="https://www.stellar.org/blog/using-stellar-for-ico/">Stellar
+              <img border="0" alt="Stellar for ICOs" src="img/stellar_clear.png" width="50" height="25" data-no-retina="">
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
 
-  
+
   <video autoplay loop id="movieHeader">
     <source src="img/Explosion.mp4" type="video/mp4">
     Your browser does not support the video tag.</video>
-   
-    <div class="text-white text-center" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160&#160Share
+
+    <div class="text-white text-center customFont" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160Share
     </div>
     <img id="customImage" src="img/MyShareLargeWhite.png">
 
@@ -158,34 +175,34 @@
       </div>
     </section>
     <section class="p-0" id="howitworks">
-        <div class="container p-0">
-        	<p id='sectionTitle'>HOW IT WORKS</p>
-          <div class="row no-gutters popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-                <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.png" alt="">
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.png" alt="">
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.png" alt="">
-            </div>
-          </div>
-    	</div>
-	  </section>
+      <div class="container p-0">
+       <p id='sectionTitle'>HOW IT WORKS</p>
+       <div class="row no-gutters popup-gallery">
+        <div class="col-lg-4 col-sm-6">
+          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.png" alt="">
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.png" alt="">
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-	  <section class="p-0">
-        <div class="container p-0">
-          <div class="row no-gutters popup-gallery">
-            <div class="col-lg-6 offset-lg-3 col-sm-12">
-                <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/roadmap.white_.png" alt="">
-            </div>
-          </div>
-    	</div>
-	  </section>
-  
-          <!-- Image Showcases -->
-    <section class="showcase">
+  <section class="p-0">
+    <div class="container p-0">
+      <div class="row no-gutters popup-gallery">
+        <div class="col-lg-6 offset-lg-3 col-sm-12">
+          <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/roadmap.white_.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Showcases -->
+    <!-- <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
 
@@ -216,7 +233,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="services">
       <div class="container">
