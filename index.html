@@ -27,18 +27,23 @@
   <style type="text/css">
 
 
+
   #movieHeader {
     margin: 0 auto;
     padding: 0;
     display: block;
     width: 100%;
+    transition: 1s;
+    /*background-color: black;*/
   }
 
   #movieHeader2{
     display: none;
-    margin: 0 auto 0 -3.1%;
+    margin: 0 auto;
     padding: 0;
-    width: 106%;
+    width: 100%;
+    transition: 1s;
+    background-color: black;
   }
 
   #customImage {
@@ -73,11 +78,6 @@
   #sectionTitle{
   	font-size: 400%;
   	text-align: center;
-  }
-
-  .howitworksImages{
-    /*max-height: 500px;*/
-
   }
 
 
@@ -129,15 +129,32 @@
 </style>
 
 <script type="text/javascript">
-  setTimeout(function(){ 
-    console.log('switch headers');
-    document.getElementById('movieHeader').style.display = "none";
-    document.getElementById('movieHeader2').style.display = "block";
-    var x = document.getElementById("movieHeader2");
-    x.autoplay = true;
-    x.load();
-  }, 15000);
+    
+    var decreaseBrightness = function(){
+      console.log('decreaseBrightness');
+      document.getElementById('movieHeader').style.filter = "brightness(0%)";
 
+      setTimeout(function(){increaseBrightness();},1000)
+    };
+
+    var increaseBrightness = function(){
+      console.log('increaseBrightness')
+      document.getElementById('movieHeader').style.filter = "brightness(100%)";
+    };
+
+    var loopSmoother = function(){
+      console.log('loop smoother')
+      setInterval(decreaseBrightness, 16000);
+    };
+
+    var initiateLoopSmoother = function(){
+      console.log('initiate loop smoother')
+      decreaseBrightness();
+      loopSmoother();
+    };
+
+    console.log('begin timeout function')
+    setTimeout(function(){ initiateLoopSmoother(); }, 16000);
 
 </script>
 
@@ -197,7 +214,7 @@
       <section>
         <div class="container">
           <div class="row" id="about">
-            <div class="col-lg-8 mx-auto text-center">
+            <div class="col-lg-10 mx-auto text-center">
               <h1  class="section-heading">MyShare (MYS) is a reward token users earn by sharing sponsored content on social media platforms.</h1>
               <hr class="light my-4">
               <!-- <p class=" mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
@@ -210,13 +227,13 @@
         <div class="container p-0">
          <p id='sectionTitle'>HOW IT WORKS</p>
          <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-3 ml-auto col-sm-6">
             <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.png" alt="">
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-3 mc-auto col-sm-6">
             <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.png" alt="">
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-3 mr-auto col-sm-6">
             <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.png" alt="">
           </div>
         </div>
@@ -226,14 +243,12 @@
     <section class="p-0">
       <div class="container p-0">
         <div class="row no-gutters popup-gallery">
-          <div class="col-lg-6 offset-lg-3 col-sm-12">
+          <div class="col-lg-4 offset-lg-4 col-sm-12">
             <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/roadmap.white_.png" alt="">
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Image Showcases -->
     <!-- <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -267,11 +282,47 @@
       </div>
     </section> -->
 
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="la.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="chicago.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> -->
+
+
+<!-- MyShare is cheap because of name your price/market supply*demand, peer to peer is effective, can be verified, and millenials are excited by crypto -->
+
+
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">Value Proposition for Marketers</h2>
             <hr class="my-4">
           </div>
         </div>
@@ -281,29 +332,29 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Your Idea</h3>
-              <p class="text-muted mb-0">We are with you from concept to creation, whitepaper to build.</p>
+              <h3 class="mb-3">Name Your Price</h3>
+              <p class="text-muted mb-0">Allowing the market to price a "share" gives marketers a low price point for promoting their media.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-bank text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Novel Assets</h3>
-              <p class="text-muted mb-0">New Stellar Lumens or Etherium ERC20 tokens are created according to your specifications</p>
+              <h3 class="mb-3">P2P Advertising</h3>
+              <p class="text-muted mb-0">Millenials are both skeptical of traditional media, and value the advice of their colleagues. MyShare allows marketers to directly empower promoters of their brand.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-rocket text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Initial Offering</h3>
-              <p class="text-muted mb-0">Distribute your new crypto asset to the public with best practices</p>
+              <h3 class="mb-3">User Excitement</h3>
+              <p class="text-muted mb-0">Millenials are excited by crypto assets. MyShare enables them to earn MYS tokens risk free for behavior they already exhibit, bringing an authentic and cutting edge face to your brand.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Partnership</h3>
-              <p class="text-muted mb-0">Our team is with you for continued development and growth opportunities</p>
+              <p class="text-muted mb-0">MyShare is committed to working with established social media platforms and adding to the impressive ecosystem they have succesfully built.</p>
             </div>
           </div>
         </div>
@@ -312,8 +363,8 @@
 
     <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <h2 class="mb-4">Read our Whitepaper here:</h2>
+        <a class="btn btn-light btn-xl sr-button" target="_blank" href="./MyShare_White_Paper_Official_Draft_5.pdf">MyShare Whitepaper</a>
       </div>
     </section>
 
@@ -323,20 +374,29 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Let's Get In Touch</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? Give our VP of Sales a call or send a direct email and we will get back to you as soon as possible!</p>
+            <p class="mb-5">Interested in speaking with us?  &#160We would love to! &#160Call or email us and we will respond as soon as possible.</p>
           </div>
         </div>
         <div class="row">
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a>5253 Sydney St.
+                Port Orange, FL 32127 USA
+              </a>
+            </p>
+          </div>
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>732-615-7768</p>
+            <p>321-236-0361</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:andrew.apicello@gmail.com">andrew.apicello@gmail.com</a>
+              <a href="office@myshare.social">office@myshare.social</a>
             </p>
           </div>
+
         </div>
       </div>
     </section>
