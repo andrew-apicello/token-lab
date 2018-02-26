@@ -3,168 +3,183 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <title>MyShare</title>
+	<title>MyShare</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<!-- Custom fonts for this template -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Plugin CSS -->
+	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/creative.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Abel|Asap|Cabin|Josefin+Sans|Nunito+Sans|Play|Questrial" rel="stylesheet">
-  <style type="text/css">
+	<!-- Custom styles for this template -->
+	<link href="css/creative.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Asap|Cabin|Josefin+Sans|Nunito+Sans|Play|Questrial" rel="stylesheet">
+	<style type="text/css">
 
 
 
-  #movieHeader {
-    margin: 0 auto;
-    padding: 0;
-    display: block;
-    width: 100%;
-    transition: 1s;
-    /*background-color: black;*/
-  }
+	#movieHeader {
+		margin: 0 auto;
+		padding: 0;
+		display: block;
+		width: 100%;
+		transition: 1s;
+		/*background-color: black;*/
+	}
 
-  #movieHeader2{
-    display: none;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    transition: 1s;
-    background-color: black;
-  }
+	#movieHeader2{
+		display: none;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+		transition: 1s;
+		background-color: black;
+	}
 
-  #customImage {
-  	height: 20vw;
-    width: 25vw;
-    padding: 0 ;
-    position: absolute;
-    display: block;
-    margin: 0 37.8vw 0 37.2vw;
-    /*width: 100%;*/
-    top: 10.1vw;
-    
-  }
+	#customImage {
+		height: 20vw;
+		width: 25vw;
+		padding: 0 ;
+		position: absolute;
+		display: block;
+		margin: 0 37.8vw 0 37.2vw;
+		/*width: 100%;*/
+		top: 10.1vw;
 
-  #customHeader{
-  	/*display: none;*/
-    padding: 0;
-    margin: 0 25%;
-    width: 50%;
-    position: absolute;
-    float: left;
-    top: 12vw;
-    font-size: 10vw;
+	}
+
+	#customHeader{
+		/*display: none;*/
+		padding: 0;
+		margin: 0 25%;
+		width: 50%;
+		position: absolute;
+		float: left;
+		top: 12vw;
+		font-size: 10vw;
     /*border-radius: 10px;
     background: black; 
     background: -webkit-linear-gradient(left top, rgba(0,0,0,0.6), rgba(0,0,0,0.95)); 
     background: -o-linear-gradient(bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.95)); 
     background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.95));
     background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));*/
-  }
+}
 
-  #sectionTitle{
-  	font-size: 400%;
-  	text-align: center;
-  }
+#sectionTitle{
+	font-size: 400%;
+	text-align: center;
+}
 
 
-  @media (max-width: 1000px) {
-    #customHeader, #movieHeader, #movieHeader2{
-      display: none;
-    }
-  }
+@media (max-width: 1000px) {
+	#customHeader, #movieHeader, #movieHeader2{
+		display: none;
+	}
+}
 
-  .customSection{
-    padding: 0rem 0
-  }
+.customSection{
+	padding: 0rem 0
+}
 
-  .portfolioVideo{
-   margin: 0 auto;
-   padding: 0;
-   display: block;
-   width: 100%;
-   /*border-radius: 50%;*/
+.portfolioVideo{
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	width: 100%;
+	/*border-radius: 50%;*/
 /*   height: 20vw;
 */ }
 
 .showcase .showcase-text {
-  /*padding: 3rem 0;*/
+	/*padding: 3rem 0;*/
 }
 
 .showcase .showcase-img {
-  /*min-height: 30rem;*/
-  background-size: cover;
+	/*min-height: 30rem;*/
+	background-size: cover;
 }
 
 @media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 0 7rem;
-  }
+	.showcase .showcase-text {
+		padding: 0 7rem;
+	}
 }
 
 .customFont{
-  /*font-family: 'Josefin Sans', sans-serif;*/
-  /*font-family: 'Cabin', sans-serif;*/
-  /*font-family: 'Abel', sans-serif;*/
-  /*font-family: 'Asap', sans-serif;*/
-  /*font-family: 'Nunito Sans', sans-serif;*/
-  /*font-family: 'Questrial', sans-serif;*/
-  font-family: 'Play', sans-serif;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	/*font-family: 'Cabin', sans-serif;*/
+	/*font-family: 'Abel', sans-serif;*/
+	/*font-family: 'Asap', sans-serif;*/
+	/*font-family: 'Nunito Sans', sans-serif;*/
+	/*font-family: 'Questrial', sans-serif;*/
+	font-family: 'Play', sans-serif;
 
 }
 
 .navbarLeft{
-  padding: 4px; 
-  border-radius: 3px;
-  background: black; 
-  background: -webkit-linear-gradient(left top, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
-  background: -o-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
-  background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0));
-  background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.4)); 
+	padding: 4px; 
+	border-radius: 3px;
+	background: black; 
+	background: -webkit-linear-gradient(left top, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+	background: -o-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+	background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+	background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.4)); 
+}
+
+#pricingList{
+	display: inline;
 }
 
 </style>
 
 <script type="text/javascript">
 
-  var decreaseBrightness = function(){
-    console.log('decreaseBrightness');
-    document.getElementById('movieHeader').style.filter = "brightness(0%)";
+	var decreaseBrightness = function(){
+		console.log('decreaseBrightness');
+		document.getElementById('movieHeader').style.filter = "brightness(0%)";
 
-    setTimeout(function(){increaseBrightness();},1000)
-  };
+		setTimeout(function(){increaseBrightness();},1000)
+	};
 
-  var increaseBrightness = function(){
-    console.log('increaseBrightness')
-    document.getElementById('movieHeader').style.filter = "brightness(100%)";
-  };
+	var increaseBrightness = function(){
+		console.log('increaseBrightness')
+		document.getElementById('movieHeader').style.filter = "brightness(100%)";
+	};
 
-  var loopSmoother = function(){
-    console.log('loop smoother')
-    setInterval(decreaseBrightness, 16000);
-  };
+	var loopSmoother = function(){
+		console.log('loop smoother')
+		setInterval(decreaseBrightness, 16000);
+	};
 
-  var initiateLoopSmoother = function(){
-    console.log('initiate loop smoother')
-    decreaseBrightness();
-    loopSmoother();
-  };
+	var initiateLoopSmoother = function(){
+		console.log('initiate loop smoother')
+		decreaseBrightness();
+		loopSmoother();
+	};
 
-  console.log('begin timeout function')
-  setTimeout(function(){ initiateLoopSmoother(); }, 16000);
+	console.log('begin timeout function')
+	setTimeout(function(){ initiateLoopSmoother(); }, 16000);
+	setTimeout(function(){ $("#customImage").fadeIn(500); }, 3000);
+	setTimeout(function(){ $("#customHeader").fadeIn(2000); }, 1000);
+	
+
+	//MyShare Center Icon
+	$(document).ready(function(){
+        $("#customImage").fadeOut(0);
+        $("#customHeader").fadeOut(0); 
+    });
+
 
 </script>
 
@@ -172,114 +187,263 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <ul>
-      <!-- a class="navbar-brand js-scroll-trigger" href="#page-top"></a> -->
-      <li class="navbar-brand">
-        <a target='_blank' class="navbarLeft js-scroll-trigger fa fa-facebook " href='https://www.facebook.com/myshareplatform'></a>
-      </li>
-      <li class="navbar-brand">
-        <a target='_blank' class="navbarLeft js-scroll-trigger fa fa-twitter " href='https://twitter.com/myshareplatform'></a>
-      </li>
-      <li class="navbar-brand">
-        <a target='_blank' class="navbarLeft js-scroll-trigger fa fa-instagram " href='https://www.instagram.com/myshareofficial/'></a>
-      </li>
-      <li class="navbar-brand">
-        <a target='_blank' class="navbarLeft js-scroll-trigger fa fa-telegram " href='https://telegram.org/@jaymoe'></a>
-      </li>
-      <li class="navbar-brand">
-        <a target='_blank' class="navbarLeft js-scroll-trigger fa fa-reddit " href='https://www.reddit.com/r/MyShare/'></a>
-      </li>
-      <li class="navbar-brand">
-        <a target='blank' class="navbarLeft js-scroll-trigger fa fa-medium " href='https://medium.com/@jaymoe'></a>
-      </li>
-    </ul>
-      
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+			<ul>
+				<!-- a class="navbar-brand js-scroll-trigger" href="#page-top"></a> -->
+				<li class="navbar-brand">
+					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-facebook " href='https://www.facebook.com/myshareplatform'></a>
+				</li>
+				<li class="navbar-brand">
+					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-twitter " href='https://twitter.com/myshareplatform'></a>
+				</li>
+				<li class="navbar-brand">
+					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-instagram " href='https://www.instagram.com/myshareofficial/'></a>
+				</li>
+				<li class="navbar-brand">
+					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-telegram " href='https://telegram.org/@jaymoe'></a>
+				</li>
+				<li class="navbar-brand">
+					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-reddit " href='https://www.reddit.com/r/MyShare/'></a>
+				</li>
+				<li class="navbar-brand">
+					<a target='blank' class="navbarLeft js-scroll-trigger fa fa-medium " href='https://medium.com/@jaymoe'></a>
+				</li>
+			</ul>
+
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
          <!--  <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#howitworks">How It Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a style="color:rgb(66, 197, 244);" target="_blank" class="nav-link js-scroll-trigger" href="https://www.stellar.org/blog/using-stellar-for-ico/">Stellar
-              <img border="0" alt="Stellar for ICOs" src="img/stellar_clear.png" width="50" height="25" data-no-retina="">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        </li> -->
+        <li class="nav-item">
+        	<a class="nav-link js-scroll-trigger" href="#howitworks">How It Works</a>
+        </li>
+        <li class="nav-item">
+        	<a class="nav-link js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+        	<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+        	<a style="color:rgb(66, 197, 244);" target="_blank" class="nav-link js-scroll-trigger" href="https://www.stellar.org/blog/using-stellar-for-ico/">Stellar
+        		<img border="0" alt="Stellar for ICOs" src="img/stellar_clear.png" width="50" height="25" data-no-retina="">
+        	</a>
+        </li>
+    </ul>
+</div>
+</div>
+</nav>
 
 
 
-  <video autoplay loop id="movieHeader">
-    <source  src="img/Explosion.mp4" type="video/mp4">
-    Your browser does not support the video tag.</video>
+<video autoplay loop id="movieHeader">
+	<source  src="img/Explosion.mp4" type="video/mp4">
+	Your browser does not support the video tag.</video>
 
 
-    <video loop id="movieHeader2">
-      <source src="img/Technology.mp4" type="video/mp4">
-      Your browser does not support the video tag.</video>
+	<video loop id="movieHeader2">
+		<source src="img/Technology.mp4" type="video/mp4">
+		Your browser does not support the video tag.</video>
 
 
 
-      <div class="text-white text-center customFont" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160Share
-      </div>
-      <img id="customImage" src="img/MyShareLargeWhite.png">
+		<div class="text-white text-center customFont" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160Share
+		</div>
+		<img id="customImage" src="img/MyShareLargeWhite.png">
 
 
-      <section>
-        <div class="container">
-          <div class="row" id="about">
-            <div class="col-lg-10 mx-auto text-center">
-              <h1  class="section-heading">MyShare (MYS) is a reward token users earn by sharing sponsored content on social media platforms.</h1>
-              <hr class="light my-4">
-              <!-- <p class=" mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
-              <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="p-0" id="howitworks">
-        <div class="container p-0">
-         <p id='sectionTitle'>HOW IT WORKS</p>
-         <div class="row no-gutters popup-gallery">
-          <div class="col-lg-3 ml-auto col-sm-6">
-            <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.png" alt="">
-          </div>
-          <div class="col-lg-3 mc-auto col-sm-6">
-            <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.png" alt="">
-          </div>
-          <div class="col-lg-3 mr-auto col-sm-6">
-            <img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
+		<section>
+			<div class="container">
+				<div class="row" id="about">
+					<div class="col-lg-10 mx-auto text-center">
+						<h1  class="section-heading">MyShare (MYS) is a reward token users earn by sharing sponsored content on social media platforms.</h1>
+						<hr class="light my-4">
+						<!-- <p class=" mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
+						<!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="pricingList">
+				<div>
+					<ul>
+						<li>
+							Sale 1
+						</li>
+						<li>15% Bonus</li>                                                
+						<li>May 1, 2018</li> 
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>
+							Sale 2
+						</li>
+						<li>10% Bonus</li>                                                
+						<li>May 8, 2018</li> 
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>
+							Sale 3
+						</li>
+						<li>5% Bonus</li>                                                
+						<li>May 15, 2018</li> 
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>
+							Sale 4
+						</li>
+						<li>3% Bonus</li>                                                
+						<li>May 22, 2018</li> 
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>
+							Sale 5
+						</li>
+						<li>No Bonus</li>                                                
+						<li>May 29, 2018</li> 
+					</ul>
+				</div>
+			</div>
+		</section>
 
-    <section class="p-0">
-      <div class="container p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 offset-lg-4 col-sm-12">
-            <img class="img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/roadmap.white_.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
+		
+		<section class="p-0" id="howitworks">
+			<div class="container p-0">
+				<p id='sectionTitle'>How It Works</p>
+				<div class="row no-gutters popup-gallery">
+					<div class="col-lg-4 ml-auto col-sm-6">
+						<img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.icon_.png" alt="">
+						<p>Build ads by linking or uploading content and choose reach and rate.</p>
+					</div>
+					<div class="col-lg-4 mc-auto col-sm-6">
+						<img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.icon_.png" alt="">
+						<p>Reviews content, verifies payment, approves ads, and distributes rewards.</p>
+					</div>
+					<div class="col-lg-4 mr-auto col-sm-6">
+						<img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.icon_.png" alt="">
+						<p>Earn MYS tokens by sharing posts on various social media platforms.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="p-0">
+			<div class="container p-0">
+				<div class="row no-gutters popup-gallery">
+					<div class="col-lg-4 offset-lg-4 col-sm-12">
+						<table style='border:0'>
+							<tbody>
+								<tr>
+									<td style="border:0;">12/17</td>
+									<td style="border:0;">
+										<span class="fa fa-check-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">Names Registered</td>
+								</tr>
+								<tr>
+									<td style="border:0;">1/18</td>
+									<td style="border:0;">
+										<span class="fa fa-check-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">Core Team Hired</td>
+								</tr>
+								<tr>
+									<td style="border:0;">1/18</td>
+									<td style="border:0;">
+										<span class="fa fa-check-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">MYS Token Created</td>
+								</tr>
+								<tr>
+									<td style="border:0;">3/18</td>
+									<td style="border:0;">
+										<span class="fa fa-check-square-o fa-fw">
+										</span>
+									</td>
+									<td style="border:0;">Website Launch</td>
+								</tr>
+								<tr>
+									<td style="border:0;">5/18</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">MYS Token Sale</td>
+								</tr>
+								<tr>
+									<td style="border:0;">6/18</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">Platform Development Begins</td>
+								</tr>
+								<tr>
+									<td style="border:0;">7/18</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">MYS Enlisted in 3rd Party Exchanges</td>
+								</tr>
+								<tr>
+									<td style="border:0;">10/18</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">App Development Begins</td>
+								</tr>
+								<tr>
+									<td style="border:0;">11/18</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">Beta Launched</td>
+								</tr>
+								<tr>
+									<td style="border:0;">1/19</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">MyShare (MYS) Wallet Launched</td>
+								</tr>
+								<tr>
+									<td style="border:0;">1/19</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">Platform Launched</td>
+								</tr>
+								<tr>
+									<td style="border:0;">2/19</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">Mobile App Launched</td>
+								</tr>
+								<tr>
+									<td style="border:0;">3/19</td>
+									<td style="border:0;">
+										<span class="fa fa-square-o fa-fw"></span>
+									</td>
+									<td style="border:0;">Merchandise Exchange Development Begins</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
     <!-- <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
@@ -311,7 +475,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+  </section> -->
 
     <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -350,86 +514,86 @@
 
 
 <section id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Value Proposition for Marketers</h2>
-        <hr class="my-4">
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">Name Your Price</h3>
-          <p class="text-muted mb-0">Allowing the market to price a "share" gives marketers a low price point for promoting their media.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-bank text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">P2P Advertising</h3>
-          <p class="text-muted mb-0">Millenials are both skeptical of traditional media, and value the advice of their colleagues. MyShare allows marketers to directly empower promoters of their brand.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-rocket text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">User Excitement</h3>
-          <p class="text-muted mb-0">Millenials are excited by crypto assets. MyShare enables them to earn MYS tokens risk free for behavior they already exhibit, bringing an authentic and cutting edge face to your brand.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box mt-5 mx-auto">
-          <i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
-          <h3 class="mb-3">Partnership</h3>
-          <p class="text-muted mb-0">MyShare is committed to working with established social media platforms and adding to the impressive ecosystem they have succesfully built.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">Value Proposition for Marketers</h2>
+				<hr class="my-4">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
+					<h3 class="mb-3">Name Your Price</h3>
+					<p class="text-muted mb-0">Allowing the market to price a "share" gives marketers a low price point for promoting their media.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fa fa-4x fa-bank text-primary mb-3 sr-icons"></i>
+					<h3 class="mb-3">P2P Advertising</h3>
+					<p class="text-muted mb-0">Millenials are both skeptical of traditional media, and value the advice of their colleagues. MyShare allows marketers to directly empower promoters of their brand.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fa fa-4x fa-rocket text-primary mb-3 sr-icons"></i>
+					<h3 class="mb-3">User Excitement</h3>
+					<p class="text-muted mb-0">Millenials are excited by crypto assets. MyShare enables them to earn MYS tokens risk free for behavior they already exhibit, bringing an authentic and cutting edge face to your brand.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center">
+				<div class="service-box mt-5 mx-auto">
+					<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+					<h3 class="mb-3">Partnership</h3>
+					<p class="text-muted mb-0">MyShare is committed to working with established social media platforms and adding to the impressive ecosystem they have succesfully built.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="bg-dark text-white">
-  <div class="container text-center">
-    <h2 class="mb-4">Learn more here:</h2>
-    <a class="btn btn-light btn-xl sr-button" target="_blank" href="./MyShare_White_Paper_Official_Draft_5.pdf">MyShare Whitepaper</a>
-  </div>
+	<div class="container text-center">
+		<h2 class="mb-4">Learn more here:</h2>
+		<a class="btn btn-light btn-xl sr-button" target="_blank" href="./MyShare_White_Paper_Official_Draft_5.pdf">MyShare Whitepaper</a>
+	</div>
 </section>
 
 <section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="section-heading">Let's Get In Touch</h2>
-        <hr class="my-4">
-        <p class="mb-5">Interested in speaking with us?  &#160We would love to! &#160Call or email us and we will respond as soon as possible.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 mr-auto text-center">
-        <i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
-        <p>
-          <a>5253 Sydney St.
-            Port Orange, FL 32127 USA
-          </a>
-        </p>
-      </div>
-      <div class="col-lg-4 ml-auto text-center">
-        <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-        <p>321-236-0361</p>
-      </div>
-      <div class="col-lg-4 mr-auto text-center">
-        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-        <p>
-          <a href="office@myshare.social">office@myshare.social</a>
-        </p>
-      </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 mx-auto text-center">
+				<h2 class="section-heading">Let's Get In Touch</h2>
+				<hr class="my-4">
+				<p class="mb-5">Interested in speaking with us?  &#160We would love to! &#160Call or email us and we will respond as soon as possible.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 mr-auto text-center">
+				<i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
+				<p>
+					<a>5253 Sydney St.
+						Port Orange, FL 32127 USA
+					</a>
+				</p>
+			</div>
+			<div class="col-lg-4 ml-auto text-center">
+				<i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+				<p>321-236-0361</p>
+			</div>
+			<div class="col-lg-4 mr-auto text-center">
+				<i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+				<p>
+					<a href="office@myshare.social">office@myshare.social</a>
+				</p>
+			</div>
 
-    </div>
-  </div>
+		</div>
+	</div>
 </section>
 
 <!-- Bootstrap core JavaScript -->
