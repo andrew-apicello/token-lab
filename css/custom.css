@@ -1,0 +1,135 @@
+
+
+
+	#movieHeader {
+		margin: 0 auto;
+		padding: 0;
+		display: block;
+		width: 100%;
+		transition: 1s;
+		/*background-color: black;*/
+	}
+
+	#movieHeader2{
+		display: none;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+		transition: 1s;
+		background-color: black;
+	}
+
+	#customImage {
+		height: 15vw;
+		width: 13.3vw;
+		padding: 0 ;
+		position: absolute;
+		display: block;
+		margin: 0 41.8vw 0 43.2vw;
+		/*width: 100%;*/
+		top: 11.9vw;
+
+	}
+
+	#customHeader{
+		/*display: none;*/
+		padding: 0;
+		margin: 0 23.5% 0 27.5%;
+		width: 50%;
+		position: absolute;
+		float: left;
+		top: 12vw;
+		font-size: 10vw;
+    /*border-radius: 10px;
+    background: black; 
+    background: -webkit-linear-gradient(left top, rgba(0,0,0,0.6), rgba(0,0,0,0.95)); 
+    background: -o-linear-gradient(bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.95)); 
+    background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.95));
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));*/
+}
+
+.howitworksImages{
+	height: 20vw;
+	display: block;
+	margin: auto;
+	/*width: 20vw;*/
+}
+
+#sectionTitle{
+	font-size: 400%;
+	text-align: center;
+}
+
+
+@media (max-width: 992px) {
+	#customHeader, #movieHeader, #movieHeader2{
+		display: none;
+	}
+}
+
+.customSection{
+	padding: 0rem 0
+}
+
+.portfolioVideo{
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	width: 100%;
+	/*border-radius: 50%;*/
+/*   height: 20vw;
+*/ }
+
+.showcase .showcase-text {
+	/*padding: 3rem 0;*/
+}
+
+.showcase .showcase-img {
+	/*min-height: 30rem;*/
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.showcase .showcase-text {
+		padding: 0 7rem;
+	}
+}
+
+.customFont{
+	font-family: 'Exo', sans-serif;
+}
+
+p{
+	font-family: 'Exo', sans-serif;
+}
+
+.navbarLeft{
+/*	height: 27px;
+width: 27px;*/
+padding: 4px;
+border-radius: 3px;
+background: black; 
+background: -webkit-linear-gradient(left top, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+background: -o-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.4)); 
+}
+
+#pricingList{
+	display: inline;
+}
+
+#services2{
+	background: black;
+	color: white;
+}
+
+.teamImages{
+	height: 10vw;
+	width: 10vw;
+	border-radius: 50%;
+}
+
+.mutedText{
+	color: lightgray;
+}

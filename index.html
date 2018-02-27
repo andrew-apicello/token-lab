@@ -25,138 +25,13 @@
 	<!-- Custom styles for this template -->
 	<link href="css/creative.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+	<link href='css/custom.css' rel='stylesheet'></style>
+
+	<script type="text/javascript" src="./js/logo_timing.js"></script>
+	<script type="text/javascript" src="./js/countdown_timer.js"></script>
+
 	<style type="text/css">
-
-
-
-	#movieHeader {
-		margin: 0 auto;
-		padding: 0;
-		display: block;
-		width: 100%;
-		transition: 1s;
-		/*background-color: black;*/
-	}
-
-	#movieHeader2{
-		display: none;
-		margin: 0 auto;
-		padding: 0;
-		width: 100%;
-		transition: 1s;
-		background-color: black;
-	}
-
-	#customImage {
-		height: 15vw;
-		width: 13.3vw;
-		padding: 0 ;
-		position: absolute;
-		display: block;
-		margin: 0 41.8vw 0 43.2vw;
-		/*width: 100%;*/
-		top: 11.9vw;
-
-	}
-
-	#customHeader{
-		/*display: none;*/
-		padding: 0;
-		margin: 0 23.5% 0 27.5%;
-		width: 50%;
-		position: absolute;
-		float: left;
-		top: 12vw;
-		font-size: 10vw;
-    /*border-radius: 10px;
-    background: black; 
-    background: -webkit-linear-gradient(left top, rgba(0,0,0,0.6), rgba(0,0,0,0.95)); 
-    background: -o-linear-gradient(bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.95)); 
-    background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.95));
-    background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));*/
-}
-
-.howitworksImages{
-	height: 20vw;
-	display: block;
-	margin: auto;
-	/*width: 20vw;*/
-}
-
-#sectionTitle{
-	font-size: 400%;
-	text-align: center;
-}
-
-
-@media (max-width: 992px) {
-	#customHeader, #movieHeader, #movieHeader2{
-		display: none;
-	}
-}
-
-.customSection{
-	padding: 0rem 0
-}
-
-.portfolioVideo{
-	margin: 0 auto;
-	padding: 0;
-	display: block;
-	width: 100%;
-	/*border-radius: 50%;*/
-/*   height: 20vw;
-*/ }
-
-.showcase .showcase-text {
-	/*padding: 3rem 0;*/
-}
-
-.showcase .showcase-img {
-	/*min-height: 30rem;*/
-	background-size: cover;
-}
-
-@media (min-width: 768px) {
-	.showcase .showcase-text {
-		padding: 0 7rem;
-	}
-}
-
-.customFont{
-	font-family: 'Exo', sans-serif;
-}
-
-p{
-	font-family: 'Exo', sans-serif;
-}
-
-.navbarLeft{
-/*	height: 27px;
-width: 27px;*/
-padding: 4px;
-border-radius: 3px;
-background: black; 
-background: -webkit-linear-gradient(left top, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
-background: -o-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
-background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0));
-background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.4)); 
-}
-
-#pricingList{
-	display: inline;
-}
-
-#services2{
-	background: black;
-	color: white;
-}
-
 </style>
-
-<!-- <script type="text/javascript" src="./js/logo_timing.js"> -->
-
-</script>
 
 </head>
 
@@ -244,6 +119,7 @@ background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,2
 				</div>
 			</div>
 		</section>
+		<p id="demo"></p>
 		<section class="p-0" id="howitworks">
 			<div class="container p-0">
 				<p id='sectionTitle'>How It Works</p>
@@ -251,17 +127,17 @@ background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,2
 					<div class="col-lg-4 ml-auto col-sm-6">
 						<img class="howitworksImages img-fluid" src="./img/hiw.advertiser.icon.png" alt="">
 						<h2 align="center">Advertisers</h2>
-						<p align="center">Build ads by linking or uploading content and choose reach and rate.</p>
+						<p style='padding: 0 3vw;' align="center">Builds sponsored social media posts by submitting content and setting a budget.</p>
 					</div>
 					<div class="col-lg-4 mc-auto col-sm-6">
 						<img class="howitworksImages img-fluid" src="./img/hiw.myshare.icon.png" alt="">
 						<h2 align="center">MyShare</h2>
-						<p align="center">Reviews content, verifies payment, approves ads, and distributes rewards.</p>
+						<p style='padding: 0 3vw;' align="center">Reviews content, verifies payment, approves ads, and distributes rewards.</p>
 					</div>
 					<div class="col-lg-4 mr-auto col-sm-6">
 						<img class="howitworksImages img-fluid" src="./img/hiw.members.icon.png" alt="">
 						<h2 align="center">Members</h2>
-						<p align="center">Earn MYS tokens by sharing posts on various social media platforms.</p>
+						<p style='padding: 0 3vw;' align="center">Earns MYS tokens by selecting sponsored content to post to their social media webpage.</p>
 					</div>
 				</div>
 			</div>
@@ -319,6 +195,8 @@ background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,2
 			<div class="container p-0">
 				<div class="row no-gutters popup-gallery">
 					<div class="col-lg-4 offset-lg-4 col-sm-12">
+						<h2 align="center">Roadmap</h2>
+						<br>
 						<table style='border:0'>
 							<tbody>
 								<tr>
@@ -415,10 +293,11 @@ background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,2
 								</tr>
 							</tbody>
 						</table>
+						<br><br>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section><!-- 
 		<section id="services">
 			<div class="container">
 				<div class="row">
@@ -460,7 +339,7 @@ background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,2
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section id="services2">
 			<div class="container">
 				<div class="row">
@@ -474,105 +353,161 @@ background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,2
 				<div class="row">
 					<div class="col-lg-4 col-md-6 text-center">
 						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
+							<i class="fa fa-4x fa-comments mb-3 sr-icons"></i>
 							<h3 class="mb-3">Word-of-Mouth Marketing</h3>
-							<p class="text-muted mb-0">Research has shown that peer-to-peer promoting can be more successful than traditional advertising.</p>
+							<p class="mutedText mb-0">Research has shown that peer-to-peer promoting can be more successful than traditional advertising.</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 text-center">
 						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-bank text-primary mb-3 sr-icons"></i>
+							<i class="fa fa-4x fa-handshake-o mb-3 sr-icons"></i>
 							<h3 class="mb-3">Name Your Price Ads</h3>
-							<p class="text-muted mb-0">Advertisers will be able to compete on our dynamic marketplace to determine the lowest price per share; ensuring members are provided with offers of the highest quality.</p>
+							<p class="mutedText mb-0">Advertisers will be able to compete on our dynamic marketplace to determine the lowest price per share; ensuring members are provided with offers of the highest quality.</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 text-center">
 						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-rocket text-primary mb-3 sr-icons"></i>
+							<i class="fa fa-4x fa-eye mb-3 sr-icons"></i>
 							<h3 class="mb-3">Transparent Results</h3>
-							<p class="text-muted mb-0">Ad fraud is costing advertisers an estimated $6.5 billion a year.  MyShare will provide a more transparent system by utilizing blockchain technology to eliminate ad fraud.</p>
+							<p class="mutedText mb-0">Ad fraud is costing advertisers an estimated $6.5 billion a year.  MyShare will provide a more transparent system by utilizing blockchain technology to eliminate ad fraud.</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 text-center">
 						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+							<i class="fa fa-4x fa-crosshairs mb-3 sr-icons"></i>
 							<h3 class="mb-3">Demographic Targeting</h3>
-							<p class="text-muted mb-0">Launch effective, targeted campaigns with the ability to customize your audience by location, age, interests, and more.</p>
+							<p class="mutedText mb-0">Launch effective, targeted campaigns with the ability to customize your audience by location, age, interests, and more.</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 text-center">
 						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+							<i class="fa fa-4x fa-child mb-3 sr-icons"></i>
 							<h3 class="mb-3">Connect to Millennials</h3>
-							<p class="text-muted mb-0">Traditional marketing strategies are less effective when reaching millennials.  We believe we can spark interest in quality content and use Shared Media to solidify this new communication channel.</p>
+							<p class="mutedText mb-0">Traditional marketing strategies are less effective when reaching millennials.  We believe we can spark interest in quality content and use Shared Media to solidify this new communication channel.</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 text-center">
 						<div class="service-box mt-5 mx-auto">
-							<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+							<i class="fa fa-4x fa-check-square-o mb-3 sr-icons"></i>
 							<h3 class="mb-3">Free Clicks and Views</h3>
-							<p class="text-muted mb-0">With MyShare, any organic, word-of-mouth campaign traction the advertisement acquires post-share, will be of sole benefit to the advertiser (i.e. clicks, shares, likes, etc) at no extra cost.</p>
+							<p class="mutedText mb-0">With MyShare, any organic, word-of-mouth campaign traction the advertisement acquires post-share, will be of sole benefit to the advertiser (i.e. clicks, shares, likes, etc) at no extra cost.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section class="bg-dark text-white">
-			<div class="container text-center">
-				<h2 class="mb-4">Learn more here:</h2>
-				<a class="btn btn-light btn-xl sr-button" target="_blank" href="./MyShare_White_Paper_Official_Draft_5.pdf">MyShare Whitepaper</a>
-			</div>
-		</section>
-
-		<section id="contact">
+		<section id="services">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 mx-auto text-center">
-						<h2 class="section-heading">Let's Get In Touch</h2>
-						<hr class="my-4">
-						<p class="mb-5">Interested in speaking with us?  &#160We would love to! &#160Call or email us and we will respond as soon as possible.</p>
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Our Team</h2>
+						<p>is dedicated to developing technology that has utility while rewarding people who participate.</p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 mr-auto text-center">
-						<i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
-						<p>
-							<a>5253 Sydney St.
-								Port Orange, FL 32127 USA
-							</a>
-						</p>
-					</div>
-					<div class="col-lg-4 ml-auto text-center">
-						<i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-						<p>321-236-0361</p>
-					</div>
-					<div class="col-lg-4 mr-auto text-center">
-						<i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-						<p>
-							<a href="office@myshare.social">office@myshare.social</a>
-						</p>
-					</div>
-
 				</div>
 			</div>
-		</section>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<img src="http://myshare.social/site/wp-content/uploads/2018/02/jame-sq-crop.png" class="teamImages" alt="Jameson Bradford">
+							<h5><b>Jameson Bradford</b></h5>
+							<span><i>Founder, CEO</i></span>
+							<hr>
+							<div>Marketing Enthusiast, Professional Musician, and Early Cryptocurrency Investor.
+								<br>
+								<a href="https://twitter.com/JayMoeshi" target="_blank"> <i class="fa fa-twitter-square"></i></a><a href="https://www.facebook.com/jameson.bradford.9" target="_blank"> <i class="fa fa-facebook-square"></i></a> <a href="https://www.linkedin.com/in/jameson-bradford-1aa79121/" target="_blank"> <i class="fa fa-linkedin-square"></i></a></div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 text-center">
+							<div class="service-box mt-5 mx-auto">
+								<img src="http://myshare.social/site/wp-content/uploads/2018/01/tomblessing1-150x150.png" alt="Tom Blessing IV" class="teamImages">
+								<h5 ><b>Tom Blessing IV</b></h5>
+								<span><i>Sr. Project Manager</i></span>
+								<hr>
+								<div>Project Developer, Web Developer, with a Masters in Team Management.
+									<br>
+									<a href="https://www.facebook.com/tomblessing4" target="_blank"> <i class="fa fa-facebook-square"></i></a> <a href="https://www.linkedin.com/in/tomblessing/" target="_blank"> <i class="fa fa-linkedin-square"></i></a></div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 text-center">
+								<div class="service-box mt-5 mx-auto">
+									<img src="http://myshare.social/site/wp-content/uploads/2018/02/andrew-sq.png" class="teamImages" alt="Andrew Apicello">
+									<h5><b>Andrew Apicello</b></h5>
+									<span><i>Lead Developer</i></span>
+									<hr>
+									<div>Bio-Physical Researcher, Software Consultant, and Full Stack Developer
+										<br>
+										<a href="https://www.facebook.com/andrew.apicello" target="_blank"> <i class="fa fa-facebook-square"></i></a> <a href="https://www.linkedin.com/in/andrewcapicello/" target="_blank"> <i class="fa fa-linkedin-square"></i></a></div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 text-center">
+									<div class="service-box mt-5 mx-auto">
+										<img src="http://myshare.social/site/wp-content/themes/rt_interstellar/custom/images/19274914_10158790481305702_8724400504392137468_n.jpg"  class="teamImages" alt="Caasiah Carby">
+										<h5><b>Caasiah Carby</b></h5>
+										<span><i>Lead Designer</i></span>
+										<hr>
+										<div>Visual Marketer and Merchandiser with a Bachelor of Science in Media Design.
+											<br>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="bg-dark text-white">
+						<div class="container text-center">
+							<h2 class="mb-4">Learn more here:</h2>
+							<a class="btn btn-light btn-xl sr-button" target="_blank" href="./MyShare_White_Paper_Official_Draft_5.pdf">MyShare Whitepaper</a>
+						</div>
+					</section>
+					<section id="contact">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-8 mx-auto text-center">
+									<h2 class="section-heading">Let's Get In Touch</h2>
+									<!-- <hr class="my-4"> -->
+									<p class="mb-5">Interested in speaking with us?  &#160We would love to! &#160Call or email us and we will respond as soon as possible.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 mr-auto text-center">
+									<i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
+									<p>
+										<a>5253 Sydney St.
+											Port Orange, FL 32127 USA
+										</a>
+									</p>
+								</div>
+								<div class="col-lg-4 ml-auto text-center">
+									<i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+									<p>321-236-0361</p>
+								</div>
+								<div class="col-lg-4 mr-auto text-center">
+									<i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+									<p>
+										<a href="office@myshare.social">office@myshare.social</a>
+									</p>
+								</div>
 
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+							</div>
+						</div>
+					</section>
 
-		<!-- Plugin JavaScript -->
-		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-		<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+					<!-- Bootstrap core JavaScript -->
+					<script src="vendor/jquery/jquery.min.js"></script>
+					<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-		<!-- Custom scripts for this template -->
-		<script src="js/creative.min.js"></script>
+					<!-- Plugin JavaScript -->
+					<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+					<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+					<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-	</body>
+					<!-- Custom scripts for this template -->
+					<script src="js/creative.min.js"></script>
 
-	</html>
+				</body>
+
+				</html>
 
 	    <!-- <section class="showcase">
       <div class="container-fluid p-0">

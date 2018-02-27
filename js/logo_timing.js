@@ -25,7 +25,7 @@
 	console.log('begin timeout function')
 	setTimeout(function(){ initiateLoopSmoother(); }, 16000);
 	setTimeout(function(){ $("#customImage").fadeIn(500); }, 3100);
-	setTimeout(function(){ $("#customHeader").fadeIn(2000); }, 1000);
+	setTimeout(function(){ $("#customHeader").fadeIn(1500); }, 1000);
 	
 
 	//MyShare Center Icon
