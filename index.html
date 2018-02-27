@@ -24,7 +24,7 @@
 
 	<!-- Custom styles for this template -->
 	<link href="css/creative.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Abel|Asap|Cabin|Josefin+Sans|Nunito+Sans|Play|Questrial" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
 	<style type="text/css">
 
 
@@ -48,21 +48,21 @@
 	}
 
 	#customImage {
-		height: 20vw;
-		width: 25vw;
+		height: 15vw;
+		width: 13.3vw;
 		padding: 0 ;
 		position: absolute;
 		display: block;
-		margin: 0 37.8vw 0 37.2vw;
+		margin: 0 41.8vw 0 43.2vw;
 		/*width: 100%;*/
-		top: 10.1vw;
+		top: 11.9vw;
 
 	}
 
 	#customHeader{
 		/*display: none;*/
 		padding: 0;
-		margin: 0 25%;
+		margin: 0 23.5% 0 27.5%;
 		width: 50%;
 		position: absolute;
 		float: left;
@@ -76,13 +76,20 @@
     background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));*/
 }
 
+.howitworksImages{
+	height: 20vw;
+	display: block;
+	margin: auto;
+	/*width: 20vw;*/
+}
+
 #sectionTitle{
 	font-size: 400%;
 	text-align: center;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
 	#customHeader, #movieHeader, #movieHeader2{
 		display: none;
 	}
@@ -117,69 +124,37 @@
 }
 
 .customFont{
-	/*font-family: 'Josefin Sans', sans-serif;*/
-	/*font-family: 'Cabin', sans-serif;*/
-	/*font-family: 'Abel', sans-serif;*/
-	/*font-family: 'Asap', sans-serif;*/
-	/*font-family: 'Nunito Sans', sans-serif;*/
-	/*font-family: 'Questrial', sans-serif;*/
-	font-family: 'Play', sans-serif;
+	font-family: 'Exo', sans-serif;
+}
 
+p{
+	font-family: 'Exo', sans-serif;
 }
 
 .navbarLeft{
-	padding: 4px; 
-	border-radius: 3px;
-	background: black; 
-	background: -webkit-linear-gradient(left top, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
-	background: -o-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
-	background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0));
-	background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.4)); 
+/*	height: 27px;
+width: 27px;*/
+padding: 4px;
+border-radius: 3px;
+background: black; 
+background: -webkit-linear-gradient(left top, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+background: -o-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+background: -moz-linear-gradient(bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+background: linear-gradient(to bottom right, rgba(255,255,255,1), rgba(255,255,255,0.4)); 
 }
 
 #pricingList{
 	display: inline;
 }
 
+#services2{
+	background: black;
+	color: white;
+}
+
 </style>
 
-<script type="text/javascript">
-
-	var decreaseBrightness = function(){
-		console.log('decreaseBrightness');
-		document.getElementById('movieHeader').style.filter = "brightness(0%)";
-
-		setTimeout(function(){increaseBrightness();},1000)
-	};
-
-	var increaseBrightness = function(){
-		console.log('increaseBrightness')
-		document.getElementById('movieHeader').style.filter = "brightness(100%)";
-	};
-
-	var loopSmoother = function(){
-		console.log('loop smoother')
-		setInterval(decreaseBrightness, 16000);
-	};
-
-	var initiateLoopSmoother = function(){
-		console.log('initiate loop smoother')
-		decreaseBrightness();
-		loopSmoother();
-	};
-
-	console.log('begin timeout function')
-	setTimeout(function(){ initiateLoopSmoother(); }, 16000);
-	setTimeout(function(){ $("#customImage").fadeIn(500); }, 3000);
-	setTimeout(function(){ $("#customHeader").fadeIn(2000); }, 1000);
-	
-
-	//MyShare Center Icon
-	$(document).ready(function(){
-        $("#customImage").fadeOut(0);
-        $("#customHeader").fadeOut(0); 
-    });
-
+<!-- <script type="text/javascript" src="./js/logo_timing.js"> -->
 
 </script>
 
@@ -193,22 +168,22 @@
 			<ul>
 				<!-- a class="navbar-brand js-scroll-trigger" href="#page-top"></a> -->
 				<li class="navbar-brand">
-					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-facebook " href='https://www.facebook.com/myshareplatform'></a>
+					<a target='_blank' align='center' class="navbarLeft js-scroll-trigger fa fa-facebook " href='https://www.facebook.com/myshareplatform'></a>
 				</li>
 				<li class="navbar-brand">
-					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-twitter " href='https://twitter.com/myshareplatform'></a>
+					<a target='_blank' align='center' class="navbarLeft js-scroll-trigger fa fa-twitter " href='https://twitter.com/myshareplatform'></a>
 				</li>
 				<li class="navbar-brand">
-					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-instagram " href='https://www.instagram.com/myshareofficial/'></a>
+					<a target='_blank' align='center' class="navbarLeft js-scroll-trigger fa fa-instagram " href='https://www.instagram.com/myshareofficial/'></a>
 				</li>
 				<li class="navbar-brand">
-					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-telegram " href='https://telegram.org/@jaymoe'></a>
+					<a target='_blank' align='center' class="navbarLeft js-scroll-trigger fa fa-telegram " href='https://telegram.org/@jaymoe'></a>
 				</li>
 				<li class="navbar-brand">
-					<a target='_blank' class="navbarLeft js-scroll-trigger fa fa-reddit " href='https://www.reddit.com/r/MyShare/'></a>
+					<a target='_blank' align='center' class="navbarLeft js-scroll-trigger fa fa-reddit " href='https://www.reddit.com/r/MyShare/'></a>
 				</li>
 				<li class="navbar-brand">
-					<a target='blank' class="navbarLeft js-scroll-trigger fa fa-medium " href='https://medium.com/@jaymoe'></a>
+					<a target='blank' align='center' class="navbarLeft js-scroll-trigger fa fa-medium " href='https://medium.com/@jaymoe'></a>
 				</li>
 			</ul>
 
@@ -252,9 +227,9 @@
 
 
 
-		<div class="text-white text-center customFont" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160Share
+		<div class="text-white text-center customFont" id="customHeader">My&#160&#160&#160&#160&#160&#160&#160Share
 		</div>
-		<img id="customImage" src="img/MyShareLargeWhite.png">
+		<img id="customImage" src="img/MyShareVectorWhite.png">
 
 
 		<section>
@@ -265,6 +240,28 @@
 						<hr class="light my-4">
 						<!-- <p class=" mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
 						<!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p-0" id="howitworks">
+			<div class="container p-0">
+				<p id='sectionTitle'>How It Works</p>
+				<div class="row no-gutters popup-gallery">
+					<div class="col-lg-4 ml-auto col-sm-6">
+						<img class="howitworksImages img-fluid" src="./img/hiw.advertiser.icon.png" alt="">
+						<h2 align="center">Advertisers</h2>
+						<p align="center">Build ads by linking or uploading content and choose reach and rate.</p>
+					</div>
+					<div class="col-lg-4 mc-auto col-sm-6">
+						<img class="howitworksImages img-fluid" src="./img/hiw.myshare.icon.png" alt="">
+						<h2 align="center">MyShare</h2>
+						<p align="center">Reviews content, verifies payment, approves ads, and distributes rewards.</p>
+					</div>
+					<div class="col-lg-4 mr-auto col-sm-6">
+						<img class="howitworksImages img-fluid" src="./img/hiw.members.icon.png" alt="">
+						<h2 align="center">Members</h2>
+						<p align="center">Earn MYS tokens by sharing posts on various social media platforms.</p>
 					</div>
 				</div>
 			</div>
@@ -318,28 +315,6 @@
 				</div>
 			</div>
 		</section>
-
-		
-		<section class="p-0" id="howitworks">
-			<div class="container p-0">
-				<p id='sectionTitle'>How It Works</p>
-				<div class="row no-gutters popup-gallery">
-					<div class="col-lg-4 ml-auto col-sm-6">
-						<img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.advertiser.icon_.png" alt="">
-						<p>Build ads by linking or uploading content and choose reach and rate.</p>
-					</div>
-					<div class="col-lg-4 mc-auto col-sm-6">
-						<img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.myshare.icon_.png" alt="">
-						<p>Reviews content, verifies payment, approves ads, and distributes rewards.</p>
-					</div>
-					<div class="col-lg-4 mr-auto col-sm-6">
-						<img class="howitworksImages img-fluid" src="http://myshare.social/site/wp-content/uploads/2018/02/hiw.members.icon_.png" alt="">
-						<p>Earn MYS tokens by sharing posts on various social media platforms.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section class="p-0">
 			<div class="container p-0">
 				<div class="row no-gutters popup-gallery">
@@ -444,7 +419,162 @@
 				</div>
 			</div>
 		</section>
-    <!-- <section class="showcase">
+		<section id="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Value Proposition for Marketers</h2>
+						<hr class="my-4">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Name Your Price</h3>
+							<p class="text-muted mb-0">Allowing the market to price a "share" gives marketers a low price point for promoting their media.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-bank text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">P2P Advertising</h3>
+							<p class="text-muted mb-0">Millenials are both skeptical of traditional media, and value the advice of their colleagues. MyShare allows marketers to directly empower promoters of their brand.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-rocket text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">User Excitement</h3>
+							<p class="text-muted mb-0">Millenials are excited by crypto assets. MyShare enables them to earn MYS tokens risk free for behavior they already exhibit, bringing an authentic and cutting edge face to your brand.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Partnership</h3>
+							<p class="text-muted mb-0">MyShare is committed to working with established social media platforms and adding to the impressive ecosystem they have succesfully built.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Advertise with Us</h2>
+						<hr class="my-4">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Word-of-Mouth Marketing</h3>
+							<p class="text-muted mb-0">Research has shown that peer-to-peer promoting can be more successful than traditional advertising.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-bank text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Name Your Price Ads</h3>
+							<p class="text-muted mb-0">Advertisers will be able to compete on our dynamic marketplace to determine the lowest price per share; ensuring members are provided with offers of the highest quality.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-rocket text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Transparent Results</h3>
+							<p class="text-muted mb-0">Ad fraud is costing advertisers an estimated $6.5 billion a year.  MyShare will provide a more transparent system by utilizing blockchain technology to eliminate ad fraud.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Demographic Targeting</h3>
+							<p class="text-muted mb-0">Launch effective, targeted campaigns with the ability to customize your audience by location, age, interests, and more.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Connect to Millennials</h3>
+							<p class="text-muted mb-0">Traditional marketing strategies are less effective when reaching millennials.  We believe we can spark interest in quality content and use Shared Media to solidify this new communication channel.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 text-center">
+						<div class="service-box mt-5 mx-auto">
+							<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+							<h3 class="mb-3">Free Clicks and Views</h3>
+							<p class="text-muted mb-0">With MyShare, any organic, word-of-mouth campaign traction the advertisement acquires post-share, will be of sole benefit to the advertiser (i.e. clicks, shares, likes, etc) at no extra cost.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-dark text-white">
+			<div class="container text-center">
+				<h2 class="mb-4">Learn more here:</h2>
+				<a class="btn btn-light btn-xl sr-button" target="_blank" href="./MyShare_White_Paper_Official_Draft_5.pdf">MyShare Whitepaper</a>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mx-auto text-center">
+						<h2 class="section-heading">Let's Get In Touch</h2>
+						<hr class="my-4">
+						<p class="mb-5">Interested in speaking with us?  &#160We would love to! &#160Call or email us and we will respond as soon as possible.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 mr-auto text-center">
+						<i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
+						<p>
+							<a>5253 Sydney St.
+								Port Orange, FL 32127 USA
+							</a>
+						</p>
+					</div>
+					<div class="col-lg-4 ml-auto text-center">
+						<i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+						<p>321-236-0361</p>
+					</div>
+					<div class="col-lg-4 mr-auto text-center">
+						<i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+						<p>
+							<a href="office@myshare.social">office@myshare.social</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Plugin JavaScript -->
+		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+		<!-- Custom scripts for this template -->
+		<script src="js/creative.min.js"></script>
+
+	</body>
+
+	</html>
+
+	    <!-- <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
 
@@ -513,101 +643,3 @@
 <!-- MyShare is cheap because of name your price/market supply*demand, peer to peer is effective, can be verified, and millenials are excited by crypto -->
 
 
-<section id="services">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">Value Proposition for Marketers</h2>
-				<hr class="my-4">
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 text-center">
-				<div class="service-box mt-5 mx-auto">
-					<i class="fa fa-4x fa-lightbulb-o text-primary mb-3 sr-icons"></i>
-					<h3 class="mb-3">Name Your Price</h3>
-					<p class="text-muted mb-0">Allowing the market to price a "share" gives marketers a low price point for promoting their media.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 text-center">
-				<div class="service-box mt-5 mx-auto">
-					<i class="fa fa-4x fa-bank text-primary mb-3 sr-icons"></i>
-					<h3 class="mb-3">P2P Advertising</h3>
-					<p class="text-muted mb-0">Millenials are both skeptical of traditional media, and value the advice of their colleagues. MyShare allows marketers to directly empower promoters of their brand.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 text-center">
-				<div class="service-box mt-5 mx-auto">
-					<i class="fa fa-4x fa-rocket text-primary mb-3 sr-icons"></i>
-					<h3 class="mb-3">User Excitement</h3>
-					<p class="text-muted mb-0">Millenials are excited by crypto assets. MyShare enables them to earn MYS tokens risk free for behavior they already exhibit, bringing an authentic and cutting edge face to your brand.</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 text-center">
-				<div class="service-box mt-5 mx-auto">
-					<i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
-					<h3 class="mb-3">Partnership</h3>
-					<p class="text-muted mb-0">MyShare is committed to working with established social media platforms and adding to the impressive ecosystem they have succesfully built.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="bg-dark text-white">
-	<div class="container text-center">
-		<h2 class="mb-4">Learn more here:</h2>
-		<a class="btn btn-light btn-xl sr-button" target="_blank" href="./MyShare_White_Paper_Official_Draft_5.pdf">MyShare Whitepaper</a>
-	</div>
-</section>
-
-<section id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 mx-auto text-center">
-				<h2 class="section-heading">Let's Get In Touch</h2>
-				<hr class="my-4">
-				<p class="mb-5">Interested in speaking with us?  &#160We would love to! &#160Call or email us and we will respond as soon as possible.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 mr-auto text-center">
-				<i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
-				<p>
-					<a>5253 Sydney St.
-						Port Orange, FL 32127 USA
-					</a>
-				</p>
-			</div>
-			<div class="col-lg-4 ml-auto text-center">
-				<i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-				<p>321-236-0361</p>
-			</div>
-			<div class="col-lg-4 mr-auto text-center">
-				<i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-				<p>
-					<a href="office@myshare.social">office@myshare.social</a>
-				</p>
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/creative.min.js"></script>
-
-</body>
-
-</html>
