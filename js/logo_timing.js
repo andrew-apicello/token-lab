@@ -1,4 +1,11 @@
 
+
+ $(window).on('load', function () {
+
+ 	document.getElementById('movieHeader').style.display = "block";
+ 	document.getElementById('movieHeader').style.display = "block";
+
+ 
 	var decreaseBrightness = function(){
 		console.log('decreaseBrightness');
 		document.getElementById('movieHeader').style.filter = "brightness(0%)";
@@ -23,8 +30,8 @@
 	};
 
 	console.log('begin timeout function')
-	setTimeout(function(){ initiateLoopSmoother(); }, 16000);
-	setTimeout(function(){ $("#customImage").fadeIn(500); }, 3100);
+	setTimeout(function(){ initiateLoopSmoother(); }, 15900);
+	setTimeout(function(){ $("#customImage").fadeIn(500); }, 3000);
 	setTimeout(function(){ $("#customHeader").fadeIn(1500); }, 1000);
 	
 
@@ -33,4 +40,4 @@
         $("#customImage").fadeOut(0);
         $("#customHeader").fadeOut(0); 
     });
-
+});

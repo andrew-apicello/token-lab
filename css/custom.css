@@ -17,6 +17,7 @@
 }
 
 #customImage {
+	display: none;
 	height: 15vw;
 	width: 13.3vw;
 	padding: 0 ;
@@ -29,7 +30,7 @@
 }
 
 #customHeader{
-	/*display: none;*/
+	display: none;
 	padding: 0;
 	margin: 0 23.5% 0 27.5%;
 	width: 50%;
