@@ -85,10 +85,3 @@
   border:10px solid transparent;
   border-top-color:#af201c;
 }
-
-
-@media (max-width:460px){
-  body{
-    display: none;
-  }
-}
