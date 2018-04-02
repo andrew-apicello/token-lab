@@ -64,10 +64,6 @@ app.get('/js/creative.min.js', function(req, res) {
     res.sendFile(path.join(__dirname + '/js/creative.min.js'));
 });
 
-
-
-
-
 app.get('/img/world_social_custom.jpg', function(req, res) {
     res.sendFile(path.join(__dirname + '/img/world_social_custom.jpg'));
 });
@@ -110,8 +106,19 @@ app.get("/MyShare_White_Paper_1.0.pdf", function(req, res) {
     res.sendFile(path.join(__dirname + '/MyShare_White_Paper_1.0.pdf'));
 });
 
+app.get("/img/jaymoe.jpg", function(req, res) {
+    res.sendFile(path.join(__dirname + '/img/jaymoe.jpg'));
+});
 
-//vendor/magnific-popup/magnific-popup.css
+app.get("/img/tomblessing.jpg", function(req, res) {
+    res.sendFile(path.join(__dirname + '/img/tomblessing.jpg'));
+});
+app.get("/img/andrew.png", function(req, res) {
+    res.sendFile(path.join(__dirname + '/img/andrew.png'));
+});
+app.get("/img/caascarby.jpg", function(req, res) {
+    res.sendFile(path.join(__dirname + '/img/caascarby.jpg'));
+});
 
 app.listen(3000);
 
