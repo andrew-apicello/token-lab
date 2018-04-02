@@ -1,0 +1,55 @@
+.mobile-timeline-section {
+  position: relative;
+  padding: 2em 0;
+}
+
+.mobile-timeline-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  height: 100%;
+  width: 4px;
+  background: #af201c;
+}
+
+.mobile-timeline-block:first-child {
+  margin-top: 0;
+}
+
+.mobile-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+
+.mobile-timeline-img {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #af201c, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-timeline-content {
+  position: relative;
+  margin-left: 30px;
+  background: #ffffff;
+  border-radius: 0.25em;
+  box-shadow: 0 3px 0 #af201c;
+}
+
+.mobile-timeline-content h2 {
+  font-size: 20px;
+}
+
+.mobile-timeline-content p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.mobile-timeline-date {
+  font-size: 12px;
+}
