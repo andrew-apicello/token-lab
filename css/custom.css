@@ -51,17 +51,37 @@
   margin: auto;
   /*width: 20vw;*/
 }
+.align{
+  text-align: center;
+}
 
-#sectionTitle {
+.sectionTitle {
   font-size: 400%;
   text-align: center;
 }
 
 @media (max-width: 992px) {
-  #customHeader,
-  #movieHeader,
-  #movieHeader2 {
+  .imgStyling, .p-content{
     display: none;
+  }
+    #movieHeaderTwo, #movieHeader{
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 350px) {
+  #movieHeaderTwo, #movieHeader{
+    padding-top: 200px;
+  }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  #panels{
+  display: none;
   }
 }
 
@@ -92,7 +112,14 @@
   .showcase .showcase-text {
     padding: 0 7rem;
   }
+
 }
+@media (max-width: 1200px) {
+  .showcase{
+    margin-top: 20px;
+  }
+}
+
 
 .customFont {
   font-family: "Exo", sans-serif;
@@ -126,6 +153,8 @@ h5 {
   width: 10vw;
   border-radius: 50%;
 }
+
+
 
 .mutedText {
   color: lightgray;
